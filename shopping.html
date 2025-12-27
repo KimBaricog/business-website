@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0px;
+      }
+      header {
+        background-color: white;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .landings {
+        display: flex;
+        gap: 25px;
+        margin-right: 40px;
+      }
+      .landings button {
+        background-color: transparent;
+        border: none;
+        border-right: solid black 1px;
+        font-size: large;
+        cursor: pointer;
+      }
+      .landings button:hover {
+        color: rgb(0, 149, 255);
+        text-decoration: underline;
+      }
+      .name img {
+        width: 80%;
+      }
+
+      main {
+        background-image: url(static/business.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        overflow-y: auto;
+      }
+
+      .maintext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .maintext h1 {
+        font-size: 3rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      .secondtext {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+        margin-left: 0;
+      }
+      .secondtext button {
+        background-color: white;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #main {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      section {
+        width: 99%;
+        height: 95vh;
+        border: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .samples {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+
+        flex-wrap: wrap;
+      }
+      .samplebox {
+        width: 350px;
+        height: 200px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .samplebox img {
+        width: 350px;
+        border-radius: 10px;
+        height: 200px;
+      }
+      .samplebox:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="name"><img src="static/logo.png" alt="logo" /></div>
+      <div class="landings">
+        <a id="gomain"><button>Main</button></a>
+        <a id="gosample"><button>Samples</button></a>
+        <a id="gocontact"><button>Contact</button></a>
+        <a href=""><button>Services</button></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="main">
+        <div class="maintext">
+          <h1>LET'S CREATE YOUR IDEAS</h1>
+
+          <div class="secondtext">
+            <p>
+              Our business specializes in creating polished, high-quality
+              presentations for students. We edit PowerPoint files and design
+              Canva projects tailored to school requirements, making assignments
+              look more professional, organized, and visually engaging. Whether
+              it’s a report, project, or visual output, we make sure every slide
+              stands out and clearly delivers your message.
+            </p>
+            <a href="sample.html"><button>Get Started</button></a>
+          </div>
+        </div>
+      </section>
+      <section id="sample">
+        <h2>Samples</h2>
+        <div class="samples">
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+          <div class="samplebox">
+            <a href="static/pptexample/intemolecular.pptx" target="_blank">
+              <img src="static/photo/entermolecular.png" alt="photo"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    document.getElementById("gomain").addEventListener("click", () => {
+      document.getElementById("main").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    document.getElementById("gosample").addEventListener("click", () => {
+      document.getElementById("sample").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  </script>
+</html>
