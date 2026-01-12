@@ -221,7 +221,7 @@ footer {
 @media (max-width: 768px) {
   /* HEADER */
   header {
-    padding: 12px 16px;
+    padding: 5px 16px;
     flex-direction: column;
     gap: 10px;
   }
@@ -234,7 +234,13 @@ footer {
   }
 
   .landings button {
-    font-size: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    overflow: none;
+  }
+  .landings button:active,
+  .landings button:focus {
+    color: blue;
   }
 
   /* HERO */
