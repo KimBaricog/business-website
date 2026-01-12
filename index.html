@@ -3,210 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        margin: 0px;
-      }
-      header {
-        background-color: white;
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .landings {
-        display: flex;
-        gap: 25px;
-        margin-right: 40px;
-      }
-      .landings button {
-        background-color: transparent;
-        border: none;
-        border-right: solid black 1px;
-        font-size: large;
-        cursor: pointer;
-      }
-      .landings button:hover {
-        color: rgb(0, 149, 255);
-        text-decoration: underline;
-      }
-      .name img {
-        width: 80%;
-      }
-
-      main {
-        background-image: url(static/business.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 90vh;
-        overflow-y: auto;
-      }
-
-      .maintext {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .maintext h1 {
-        font-size: 3rem;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-      }
-
-      .secondtext {
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        width: 50%;
-        text-align: center;
-        padding: 10px;
-        margin-left: 0;
-      }
-      .secondtext button {
-        background-color: white;
-        border: none;
-        padding: 20px 40px;
-        border-radius: 10px;
-        cursor: pointer;
-      }
-      #main {
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      section {
-        width: 99%;
-        height: 95vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      .samples {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        flex-wrap: wrap;
-      }
-      .samplebox {
-        width: 350px;
-        height: 200px;
-        background-color: white;
-        border-radius: 10px;
-        margin: 10px;
-        cursor: pointer;
-      }
-      .samplebox img {
-        width: 350px;
-        border-radius: 10px;
-        height: 200px;
-      }
-      .samplebox:hover {
-        transform: scale(1.05);
-      }
-    </style>
+    <title>Slidecraft</title>
+    <link rel="icon" href="static/logoforweb.png" />
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
-      <div class="name"><img src="static/logo.png" alt="logo" /></div>
+      <div class="name">
+        <img src="static/logoforweb.png" alt="Slidecraft Logo" />
+      </div>
       <div class="landings">
-        <a id="gomain"><button>Main</button></a>
-        <a id="gosample"><button>Samples</button></a>
-        <a id="gocontact"><button>Contact</button></a>
-        <a href=""><button>Services</button></a>
+        <a href="#main"><button>Home</button></a>
+        <a href="#services"><button>Services</button></a>
+        <a href="#sample"><button>Samples</button></a>
+        <a href="#team"><button>Team</button></a>
+        <a href="#contact"><button>Contact</button></a>
       </div>
     </header>
 
-    <main>
-      <section id="main">
-        <div class="maintext">
-          <h1>LET'S CREATE YOUR IDEAS</h1>
+    <!-- HERO -->
+    <section id="main">
+      <div class="maintext">
+        <h1>Professional Presentation Design Made Simple</h1>
+        <p>
+          We help students create clean, modern, and powerful presentations that
+          impress teachers and audiences.
+        </p>
+        <button id="btn">Get Started</button>
+      </div>
+    </section>
 
-          <div class="secondtext">
-            <p>
-              Our business specializes in creating polished, high-quality
-              presentations for students. We edit PowerPoint files and design
-              Canva projects tailored to school requirements, making assignments
-              look more professional, organized, and visually engaging. Whether
-              it’s a report, project, or visual output, we make sure every slide
-              stands out and clearly delivers your message.
-            </p>
-            <a href="sample.html"><button>Get Started</button></a>
-          </div>
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>What We Do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Presentation Design</h3>
+          <p>Clean, professional, and visually engaging slides.</p>
         </div>
-      </section>
-      <section id="sample">
-        <h2>Samples</h2>
-        <div class="samples">
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
-          <div class="samplebox">
-            <a href="static/pptexample/intemolecular.pptx" target="_blank">
-              <img src="static/photo/entermolecular.png" alt="photo"
-            /></a>
-          </div>
+        <div class="service">
+          <h3>Academic Projects</h3>
+          <p>Structured presentations for school requirements.</p>
         </div>
-      </section>
-    </main>
+        <div class="service">
+          <h3>Rush project</h3>
+          <p>Quick turnaround without sacrificing quality.</p>
+        </div>
+        <div class="service">
+          <h3>Custom Polaroid</h3>
+          <p>turn your memories into beautifully crafted keepsakes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAMPLES -->
+    <section id="sample">
+      <h2>Our Samples</h2>
+      <div class="samples">
+        <div class="samplebox">
+          <img src="static/photo/inter.png" />
+          <a href="static/pptexample/intemolecular.pptx">
+            <button>Download</button></a
+          >
+        </div>
+        <div class="samplebox">
+          <img src="static/photo/vulna.png" />
+          <a href="static/pptexample/Vulnerabilities.pptx"
+            ><button>Download</button></a
+          >
+        </div>
+        <div class="samplebox">
+          <img src="static/photo/solar.png" />
+          <a href="static/pptexample/Solar Energies.pptx"
+            ><button>Download</button></a
+          >
+        </div>
+        <div class="samplebox">
+          <img src="static/photo/tsunami.png" />
+          <a href="static/pptexample/tsunami.pptx"><button>Download</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+      <h2>Meet the Team</h2>
+      <div class="team">
+        <div class="member">
+          <img src="static/photo/tanyog.jpg" />
+          <h5>Jonathan Tanyog Jr.</h5>
+          <h3>Project Manager</h3>
+          <p>Handles planning, deadlines, and client communication.</p>
+        </div>
+
+        <div class="member">
+          <img src="static/photo/cangco.jpg" />
+          <h5>Rolly Cangco Jr.</h5>
+          <h3>Finance Officer</h3>
+          <p>Manages pricing, payments, and social media.</p>
+        </div>
+
+        <div class="member">
+          <img src="static/photo/kim.jpg" />
+          <h5>Kim Baricog</h5>
+          <h3>Developer / Designer</h3>
+          <p>Creates presentations and visual designs.</p>
+        </div>
+
+        <div class="member">
+          <img src="static/photo/romy.jpg" />
+          <h5>Romy Suayon</h5>
+          <h3>Assistant Manager</h3>
+          <p>Supports client communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact">
+        <p>Email: kimbaricog4@gmail.com</p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/kim.baricog.2025">Kim Baricog</a>
+        </p>
+        <p>Fast and affordable presentation services for students.</p>
+      </div>
+    </section>
+
+    <footer>© 2026 Slidecraft. All rights reserved.</footer>
   </body>
-  <script>
-    document.getElementById("gomain").addEventListener("click", () => {
-      document.getElementById("main").scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-
-    document.getElementById("gosample").addEventListener("click", () => {
-      document.getElementById("sample").scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-  </script>
+  <script src="static/main.js" defer></script>
 </html>
