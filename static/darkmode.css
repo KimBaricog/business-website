@@ -1,0 +1,34 @@
+:root {
+  --primary: #111827;
+}
+
+body.dark {
+  background-color: var(--primary);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dark #head {
+  background-color: #111827;
+  color: white;
+}
+.dark #main {
+  background: linear-gradient(135deg, #070b1a, #0c1534);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark .service,
+.dark .member {
+  background-color: #070b1a;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark #sample button {
+  background-color: #020a1a;
+}
+.dark footer {
+  background-color: #070b1a;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

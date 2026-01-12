@@ -17,7 +17,7 @@ html {
 body {
   margin: 0;
   background-color: var(--bg-light);
-  color: var(--primary);
+  color: #111827;
   line-height: 1.6;
 }
 
@@ -27,7 +27,7 @@ header {
   top: 0;
   z-index: 100;
   background: #fff;
-  padding: 16px 32px;
+  padding: 0px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ header {
 }
 
 .name img {
-  height: 40px;
+  width: 150px;
 }
 
 .landings a {
@@ -48,7 +48,6 @@ header {
   border: none;
   font-size: 15px;
   cursor: pointer;
-  color: var(--primary);
 }
 
 .landings button:hover {
@@ -297,5 +296,8 @@ footer {
   footer {
     font-size: 13px;
     padding: 16px;
+  }
+  .name img {
+    width: 80px;
   }
 }
