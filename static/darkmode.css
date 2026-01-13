@@ -24,6 +24,12 @@ body.dark {
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+.dark .plan .inner {
+  background-color: #070b1a;
+  color: white;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 .dark #sample button {
   background-color: #020a1a;

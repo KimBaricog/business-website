@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e5e7eb;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .name img {
@@ -216,6 +217,21 @@ footer {
   font-size: 14px;
   margin-top: 60px;
 }
+#bundle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.plancontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#modeswitch {
+  display: none;
+}
 /* ================= MOBILE OPTIMIZATION ================= */
 @media (max-width: 768px) {
   /* HEADER */
@@ -224,7 +240,21 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
-
+  #bundle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .plancontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #modeswitch {
+    display: block;
+  }
   .landings {
     display: flex;
     flex-wrap: wrap;
@@ -233,8 +263,8 @@ footer {
   }
 
   .landings button {
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 15px;
+
     overflow: none;
   }
   .landings button:active,
@@ -342,7 +372,6 @@ footer {
 }
 #clickview {
   color: blue;
-  text-decoration: underline;
 }
 #contact {
   padding: 60px 20px;
