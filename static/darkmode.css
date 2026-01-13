@@ -39,3 +39,6 @@ body.dark {
 .dark #contact {
   background-color: var(--primary);
 }
+.dark #contact h2 {
+  color: white;
+}
