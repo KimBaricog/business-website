@@ -18,7 +18,8 @@ body.dark {
 }
 
 .dark .service,
-.dark .member {
+.dark .member,
+.dark .contact-card {
   background-color: #070b1a;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -34,4 +35,7 @@ body.dark {
 }
 .dark .landings button {
   color: white;
+}
+.dark #contact {
+  background-color: var(--primary);
 }

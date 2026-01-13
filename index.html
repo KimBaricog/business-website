@@ -39,7 +39,7 @@
       <div id="landing" class="landings">
         <a href="#main"><button>Home</button></a>
         <a href="#services"><button>Services</button></a>
-        <a href="#sample"><button>Samples</button></a>
+
         <a href="#team"><button>Team</button></a>
         <a href="#contact"><button>Contact</button></a>
       </div>
@@ -61,58 +61,100 @@
     <section id="services">
       <h2>What We Do</h2>
       <div class="services">
-        <div class="service">
+        <div class="service" onclick="toggleService(this)">
           <h3>Presentation Design</h3>
           <p>Clean, professional, and visually engaging slides.</p>
+          <p id="clickview">Click to view</p>
+
+          <div class="service-more">
+            <p>Some of our sample designs:<br />click to download</p>
+            <div class="service-images">
+              <a href="static/pptexample/Solar Energies.pptx"
+                ><img src="static/photo/solar.png" alt="Design 1"
+              /></a>
+              <a href="static/pptexample/volcanicsign.pptx"
+                ><img src="static/photo/volcanicsing.png" alt="Design 1"
+              /></a>
+              <a href="static/pptexample/tsunami.pptx"
+                ><img src="static/photo/tsunami.png" alt="Design 1"
+              /></a>
+              <a href="static/pptexample/Vulnerabilities.pptx"
+                ><img src="static/photo/vulna.png" alt="Design 1"
+              /></a>
+            </div>
+          </div>
         </div>
-        <div class="service">
-          <h3>Academic Projects</h3>
-          <p>Structured presentations for school requirements.</p>
+
+        <div class="service" onclick="toggleService(this)">
+          <h3>Canva editing</h3>
+          <p>Flyers, Pamphlet, Resumes, and many more.</p>
+          <p id="clickview">Click to view</p>
+
+          <div class="service-more">
+            <p>Some of our sample designs:<br />click to download</p>
+            <div class="service-images">
+              <a href="static/canvaexample/flyer.png" download
+                ><img src="static/canvaexample/flyer.png" alt="Design 1"
+              /></a>
+              <a href="static/canvaexample/alchemy.jpg" download
+                ><img src="static/canvaexample/alchemy.jpg" alt="Design 1"
+              /></a>
+            </div>
+          </div>
         </div>
-        <div class="service">
-          <h3>Rush project</h3>
-          <p>Quick turnaround without sacrificing quality.</p>
+
+        <div class="service" onclick="toggleService(this)">
+          <h3>Printing</h3>
+          <p>
+            High-quality printing for all your needs-fast, affordable, and crisp
+            results every time
+          </p>
+          <p id="clickview">Click to view</p>
+
+          <div class="service-more">
+            <p style="font-weight: bold">Pricing:</p>
+            <p>
+              • 1 page – <strong>₱5</strong><br />
+              • More than 10 pages – <strong>₱4</strong> per page
+            </p>
+          </div>
         </div>
-        <div class="service">
-          <h3>Custom Polaroid</h3>
-          <p>turn your memories into beautifully crafted keepsakes.</p>
+
+        <div class="service" onclick="toggleService(this)">
+          <h3>Polaroid</h3>
+          <p>
+            Capture memories instantly with our vibrant and fun Polaroid prints
+          </p>
+          <p id="clickview">Click to view</p>
+
+          <div class="service-more">
+            <p style="font-weight: bold">Pricing:</p>
+            <p>
+              • 1×1 – <strong>₱10 (whole photopaper A4)</strong><br />
+              • 2×2 – <strong>₱15 (whole photopaper A4)</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="service" onclick="toggleService(this)">
+          <h3>Encoding</h3>
+          <p>Accurate and fast encoding for research papers, documents.</p>
+          <p id="clickview">Click to view</p>
+
+          <div class="service-more">
+            <p style="font-weight: bold">Pricing:</p>
+            <p>
+              • Research paper / any document – ₱30 or more than (depending on
+              text length)
+            </p>
+            <p style="font-weight: bold">Encoding bundle</p>
+            <p>• Encoding + PPT (price depends on text length)</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SAMPLES -->
-    <section id="sample">
-      <h2>Our Samples</h2>
-      <div class="samples">
-        <div class="samplebox">
-          <img src="static/photo/inter.png" />
-          <a href="static/pptexample/intemolecular.pptx">
-            <button>Download</button></a
-          >
-        </div>
-        <div class="samplebox">
-          <img src="static/photo/vulna.png" />
-          <a href="static/pptexample/Vulnerabilities.pptx"
-            ><button>Download</button></a
-          >
-        </div>
-        <div class="samplebox">
-          <img src="static/photo/solar.png" />
-          <a href="static/pptexample/Solar Energies.pptx"
-            ><button>Download</button></a
-          >
-        </div>
-        <div class="samplebox">
-          <img src="static/photo/tsunami.png" />
-          <a href="static/pptexample/tsunami.pptx"><button>Download</button></a>
-        </div>
-
-        <div class="samplebox">
-          <img src="static/photo/tsunami.png" />
-          <a href="static/pptexample/tsunami.pptx"><button>Download</button></a>
-        </div>
-      </div>
-    </section>
 
     <!-- TEAM -->
     <section id="team">
@@ -126,7 +168,7 @@
         </div>
 
         <div class="member">
-          <img src="static/photo/rollyc.jpg" />
+          <img src="static/photo/cangco.jpg" />
           <h5>Rolly Cangco Jr.</h5>
           <h3>Finance Officer</h3>
           <p>Manages pricing, payments, and social media.</p>
@@ -151,17 +193,54 @@
     <!-- CONTACT -->
     <section id="contact">
       <h2>Contact Us</h2>
-      <div class="contact">
-        <p>Email: kimbaricog4@gmail.com</p>
-        <p>
-          Facebook:
-          <a href="https://www.facebook.com/kim.baricog.2025">Kim Baricog</a>
-        </p>
-        <p>
-          Facebook:
-          <a href="https://www.facebook.com/PCCDCANGCO">Rolly Cangco jr.</a>
-        </p>
-        <p>Fast and affordable presentation services for students.</p>
+      <div class="contact-cards">
+        <a
+          href="https://www.facebook.com/profile.php?id=61586541810285"
+          target="_blank"
+          class="contact-card"
+        >
+          <img
+            src="static/photo/pageprofile.png"
+            alt="Facebook"
+            class="contact-icon"
+          />
+          <div class="contact-info">
+            <p class="contact-name">Frame & Form</p>
+            <p class="contact-label">Facebook</p>
+          </div>
+        </a>
+
+        <a
+          href="https://www.facebook.com/kim.baricog.2025"
+          target="_blank"
+          class="contact-card"
+        >
+          <img
+            src="static/photo/kimprofile.jpg"
+            alt="Facebook"
+            class="contact-icon"
+          />
+          <div class="contact-info">
+            <p class="contact-name">Kim Baricog</p>
+            <p class="contact-label">Facebook</p>
+          </div>
+        </a>
+
+        <a
+          href="https://www.facebook.com/PCCDCANGCO"
+          target="_blank"
+          class="contact-card"
+        >
+          <img
+            src="static/photo/rollyc.jpg"
+            alt="Facebook"
+            class="contact-icon"
+          />
+          <div class="contact-info">
+            <p class="contact-name">Rolly Cangco Jr.</p>
+            <p class="contact-label">Facebook</p>
+          </div>
+        </a>
       </div>
     </section>
 

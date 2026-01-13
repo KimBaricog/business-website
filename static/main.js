@@ -16,3 +16,7 @@ swith.addEventListener("change", () => {
     img.src = "static/logo.png";
   }
 });
+
+function toggleService(element) {
+  element.classList.toggle("active");
+}
