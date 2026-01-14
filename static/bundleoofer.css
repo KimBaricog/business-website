@@ -34,7 +34,16 @@
   font-weight: 600;
   color: #425475;
 }
-
+#services .pricingser {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #425475;
+}
 .plan .pricing small {
   color: #707a91;
   font-size: 0.7em;
